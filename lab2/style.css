@@ -1,7 +1,24 @@
-h1{
+h1 {
     color: brown;
 }
 
-body{
+body {
     background-color: darkgray;
+}
+
+a {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    border: solid;
+    text-decoration: none;
+    display: inline-block;
+}
+
+br {
+    margin: 20em;
+    display: block;
+    content: "";
+    font-size: 2%;
 }
