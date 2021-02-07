@@ -1,0 +1,31 @@
+* + * {
+    margin-top: 1rem;
+  }
+  
+  h1{
+      color: crimson;
+      font-family: 'Creepster', cursive;
+      text-align: center;
+  }
+  
+  a{
+      color: #06b400;
+      text-align: center;
+  }
+  
+  .module {
+    border: 0.5rem solid #06b400;
+    padding: 1rem;
+    background: black;
+  }
+  .module > div {
+    padding: 1rem;
+    background: red;
+  }
+
+  
+  body {
+    background: black;
+    margin: 0;
+    padding: 1rem;
+  }
