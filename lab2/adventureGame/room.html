@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room</title>
 </head>
+
 <body>
-    
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
 </body>
+<audio id="roomGhost">
+    <source src="sounds/Azghost.mp3" />
+</audio>
 <style>
     body {
         background-image: url('pictures/room.jpg');
@@ -16,4 +23,7 @@
         background-size: 100% 100%;
     }
 </style>
+<script>
+    document.getElementById("roomGhost").play();
+</script>
 </html>

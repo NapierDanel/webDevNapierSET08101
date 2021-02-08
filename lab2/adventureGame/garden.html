@@ -6,8 +6,16 @@
     <title>Outside</title>
 </head>
 <body>
-    
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
 </body>
+<audio id="trimmer" preload="auto">
+    <source src="sounds/lawnmowel.mp3" />
+</audio>
+<audio id="smile" preload="auto">
+    <source src="sounds/creazySmile.mp3" />
+</audio>
 <style>
     body {
         background-image: url('pictures/garden.jpeg');
@@ -16,5 +24,9 @@
         background-size: 100% 100%;
     }
 </style>
+<script>
+        document.getElementById("trimmer").play();
+        document.getElementById("smile").play();
 
+</script>
 </html>

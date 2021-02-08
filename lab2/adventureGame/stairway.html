@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stairway</title>
 </head>
-<body>
 
+<body>
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
 </body>
 <style>
     body {
@@ -16,4 +20,12 @@
         background-size: 100% 100%;
     }
 </style>
+<audio id="stairway" preload="auto">
+    <source src="sounds/stairwaysound.mp3" />
+</audio>
+<script>
+    document.getElementById("stairway").play();
+
+</script>
+
 </html>
