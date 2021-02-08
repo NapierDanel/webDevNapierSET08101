@@ -6,6 +6,11 @@
       color: crimson;
       font-family: 'Creepster', cursive;
       text-align: center;
+      font-size: 4em;
+      -webkit-animation: horror-animation 5s infinite;
+      -moz-animation: horror-animation 5s infinite;
+      -o-animation: horror-animation 5s infinite;
+      animation: horror-animation 5s infinite;
   }
   
   a{
