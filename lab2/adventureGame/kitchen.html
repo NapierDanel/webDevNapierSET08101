@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>in the Kitchen</title>
 </head>
-<body>
-    <img src="Hay-Rainbow-Tasse-hellblau.jpg" draggable="true" width="100" height="100">
 
+<body>
+    <div style="background-image: kitchen.jpg;">
+        <img src="pictures/Hay-Rainbow-Tasse-hellblau.jpg" draggable="true" width="100" height="100" style="float:right;">
+
+        <form>
+            <input type="button" value="Go back!" onclick="history.back()">
+        </form>
 </body>
+<style>
+    body {
+        background-image: url('pictures/kitchen.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+
+<script>
+    $("img").click(function () {
+        var x = $("p").position();
+        alert("Top: " + x.top + " Left: " + x.left);
+    });
+    function printMousePos(event) {
+        console.log(
+            "clientX: " + event.clientX +
+            " - clientY: " + event.clientY);
+    }
+
+    document.addEventListener("click", printMousePos);
+
+</script>
+
 </html>
