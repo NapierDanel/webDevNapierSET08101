@@ -1,38 +1,120 @@
-* + * {
-    margin-top: 1rem;
-  }
-  
-  h1{
-      color: crimson;
-      font-family: 'Creepster', cursive;
-      text-align: center;
-      font-size: 4em;
-      -webkit-animation: horror-animation 5s infinite;
-      -moz-animation: horror-animation 5s infinite;
-      -o-animation: horror-animation 5s infinite;
-      animation: horror-animation 5s infinite;
-  }
-  
-  a{
-      color: #06b400;
-      text-align: center;
-  }
-  
-  .module {
-    border: 0.5rem solid #06b400;
-    padding: 1rem;
-    background: black;
-  }
-  .module > div {
-    padding: 1rem;
-    background: red;
-  }
+*+* {
+  margin-top: 1rem;
+}
 
-  
-  body {
-    background: black;
-    margin: 0;
-    padding: 1rem;
-  }
+h1 {
+  color: crimson;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  font-size: 4em;
+  -webkit-animation: horror-animation 5s infinite;
+  -moz-animation: horror-animation 5s infinite;
+  -o-animation: horror-animation 5s infinite;
+  animation: horror-animation 5s infinite;
+}
 
+a {
+  color: #06b400;
+  text-align: center;
+}
+
+.module {
+  border: 0.5rem solid #06b400;
+  padding: 1rem;
+  background: black;
+}
+
+.module>div {
+  padding: 1rem;
+  background: red;
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Jump and Run Part */
+
+.character {
+  background-image: url("pictures/characterSlideRight.png");
+  height: 200px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.character-slide-right {
+  background-image: url("pictures/characterSlideRight.png");
   
+  height: 200px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.character-slide-left {
+  background-image: url("pictures/charakterSlideLeft.png");
+  height: 200px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.character-jump-right {
+  background-image: url("pictures/characterJumpRight.png");
+  height: 200px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.character-jump-left {
+  background-image: url("pictures/characterJumpLeft.png");
+  height: 200px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+
+.campfire{
+  background-image: url("pictures/campfire.png");
+  height: 150px;
+  width: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+/* Lifes */
+
+.lifes{
+  background-image: url("pictures/pixel-heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  display: flex;
+  background-size: cover;
+  height: 50px;
+  width: 40px;
+  background-position: center;
+}
